@@ -2,7 +2,7 @@ FROM node:18-alpine as builder
 ENV NODE_ENV build
 WORKDIR /home/node
 COPY package*.json ./
-RUN npm ci --only=production && npm cache clean --force
+RUN npm ci
 COPY . .
 RUN npm run build
 
