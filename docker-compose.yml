@@ -1,0 +1,19 @@
+version: '3'
+services:
+  redis:
+    image: redis
+    volumes:
+      - redis-data:/data
+    ports:
+      - "6379:6379"
+    restart: always
+  nestjs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "3000:3000"
+volumes:
+  redis-data:
