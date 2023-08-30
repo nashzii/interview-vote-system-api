@@ -1,4 +1,4 @@
-# Vote System
+# Vote System (API)
 ## Data set
 Certainly! Below is a Markdown representation of your vote system dataset in Redis:
 
@@ -64,6 +64,7 @@ $ npm run test
 $ docker-compose -p "api" up -d
 ```
 ### To view generated users (from faker-js)
+user already generate on start service.
 ```bash
 # Example data aida,Zj4CjyhgzF1WIRxvht0Gx <user,password>
 $ docker exec -it api-nestjs-1 sh -c 'cat user.txt'
