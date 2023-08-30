@@ -61,6 +61,7 @@ $ npm run test
 ### Build as docker (docker-compose)
 ```bash
 # deploy to docker (docker-compose)
+$ npm install
 $ docker-compose -p "api" up -d
 ```
 ### To view generated users (from faker-js)
